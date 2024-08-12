@@ -1,0 +1,243 @@
+# {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS',
+        'Lucida Sans Unicode',
+        'Lucida Grande',
+        'Lucida Sans',
+        Arial,
+        sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.top {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(https://resize.indiatvnews.com/en/centered/newbucket/1200_675/2024/01/kalki-2898-ad-1705045306.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    margin-top: 25px;
+}
+
+.top.overlay {
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.211);
+    position: relative;
+}
+
+.text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    color: white;
+    width: 100%;
+    padding: 0 10vh;
+    bottom: 43%;
+    margin-right: 30px;
+}
+
+.icons {
+    margin-right: 50px;
+}
+
+.text .h1 {
+    font-weight: 600;
+    font-size: 4vw;
+}
+
+.image {
+    width: 220px;
+    height: 300px;
+    background-image: url(https://wallpapercave.com/wp/wp9520854.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-right: 30px;
+    border-radius: 40px;
+}
+
+.rtext {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 25%;
+    font-size: 2vw;
+}
+
+.bottom {
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+}
+
+.b1 {
+    width: 30%;
+    min-height: 40vh;
+    background-image: url(https://assets3.thrillist.com/v1/image/2928984/1584x1056/scale;jpeg_quality=60.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.b1 h1 {
+    text-align: center;
+    padding: 30px;
+    color: aqua;
+}
+
+.b1 p {
+    color: aqua;
+    text-align: center;
+    padding: 15px;
+}
+
+.b2 {
+    width: 30%;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.b2 .up {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://www.screamhorrormag.com/wp-content/uploads/2019/07/horror-movies-2019.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+}
+
+.b2 .up h1 {
+    text-align: center;
+    padding: 30px;
+    color: red;
+}
+
+.b2 .up p {
+    color: red;
+    text-align: center;
+    padding: 15px;
+}
+
+.b2 .down {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://wallpaperaccess.com/full/1512237.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+}
+
+.more {
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 150px;
+    border-radius: 10px;
+}
+
+.down h1 {
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+.b3 {
+    width: 40%;
+    min-height: inherit;
+    background-image: url(https://www.vitalthrills.com/wp-content/uploads/2023/01/actionmovies4.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+}
+
+.b3 p {
+    color: gold;
+    text-align: right;
+    padding: 15px;
+    margin-right: 15px;
+}
+
+@media(max-width:700px) {
+    .rtest {
+        flex-direction: column;
+    }
+
+    .b3.top.overlay {
+        width: 100%;
+        margin-left: initial;
+    }
+}
+
+@media(max-width:500px) {
+    .text {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .text h1 {
+        font-size: 4vh;
+    }
+
+    .text .image {
+        width: 150px;
+        height: 220px;
+        margin-top: 20px;
+    }
+
+    .rtext {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .rtext p {
+        margin-top: 10px;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+
+    .bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .b1 {
+        width: 100%;
+        min-height: 30vh;
+    }
+
+    .b2 {
+        width: 100%;
+    }
+
+    .b2 .up {
+        min-height: 30vh;
+    }
+
+    .b3 {
+        width: 100%;
+        min-height: 30vh;
+        background-position: left;
+    }
+}
